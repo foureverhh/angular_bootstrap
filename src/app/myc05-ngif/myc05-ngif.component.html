@@ -1,0 +1,13 @@
+<p>myc05-ngif works!</p>
+
+<button (click)="loadMore()">load more</button>
+<div *ngIf="hasMore; else more; then noMore"></div>
+  <ng-template #more>
+    <hr>
+    <p>new content</p>
+  </ng-template>
+  <ng-template #noMore>
+    <hr>
+    <p>end</p>
+  </ng-template>
+
